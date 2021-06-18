@@ -27,7 +27,7 @@ public class A004_findNumberIn2DArray {
     }
 
     public static boolean findNumberIn2DArray(int[][] matrix, int target) {
-        if (matrix == null || matrix.length == 0)
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
             return false;
         int x = matrix[0].length - 1, y = 0;
         while (y < matrix.length && x > -1) {
